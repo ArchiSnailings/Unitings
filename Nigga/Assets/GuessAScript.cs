@@ -21,5 +21,8 @@ public class GuessAScript : MonoBehaviour {
         {
             GetComponent<Renderer>().material.color = Color.blue;
         }
+        if (Input.GetKey(KeyCode.UpArrow)) {
+            transform.position += new Vector3(0, 0.1f, 0.1f);
+        }
     }
 }
